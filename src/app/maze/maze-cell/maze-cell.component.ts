@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MazeCell } from '../../lib/maze-cell.model';
 
 @Component({
-  selector: 'app-mace-cell',
-  templateUrl: './mace-cell.component.html',
-  styleUrls: ['./mace-cell.component.css']
+  selector: 'app-maze-cell',
+  templateUrl: './maze-cell.component.html',
+  styleUrls: ['./maze-cell.component.css']
 })
-export class MaceCellComponent implements OnInit {
+export class MazeCellComponent implements OnInit {
   @Input('data') cellData: MazeCell = {
     exploredType: 'unexplored',
     x: 0,

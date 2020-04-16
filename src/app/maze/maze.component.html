@@ -1,5 +1,5 @@
 <div id="maze" class="row" [ngStyle]="{width: getPixelWidth(), height: getPixelHeight()}">
-  <app-mace-cell
+  <app-maze-cell
     *ngFor="let cell of maze.getCells()"
-    [data]="cell"></app-mace-cell>
+    [data]="cell"></app-maze-cell>
 </div>
