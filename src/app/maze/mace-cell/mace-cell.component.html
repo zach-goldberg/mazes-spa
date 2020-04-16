@@ -1,0 +1,10 @@
+<span [ngClass]="{
+  cell: true,
+  unexplored: cellData.exploredType === 'unexplored',
+  explored: cellData.exploredType === 'explored',
+  'path-up': cellData.pathUp,
+  'path-down': cellData.pathDown,
+  'path-left': cellData.pathLeft,
+  'path-right': cellData.pathRight}"
+  [ngStyle]="{ left: getLeftOffset(), top: getTopOffset() }">
+</span>
