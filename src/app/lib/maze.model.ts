@@ -14,7 +14,7 @@ export class Maze {
       let cellData: MazeCell = this.graph.node(id);
       let { x, y } = cellData;
       if (this.graph.hasEdge(id, this.toStringCoordinate(x + 1, y))
-      || this.graph.hasEdge(this.toStringCoordinate(x + 1, y), id)) {
+        || this.graph.hasEdge(this.toStringCoordinate(x + 1, y), id)) {
         cellData.pathRight = true;
       }
       if (this.graph.hasEdge(id, this.toStringCoordinate(x - 1, y))
