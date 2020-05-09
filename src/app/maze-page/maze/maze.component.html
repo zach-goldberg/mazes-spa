@@ -1,0 +1,17 @@
+<div id="maze" class="row" [ngStyle]="{width: getPixelWidth(), height: getPixelHeight()}">
+  <app-maze-cell
+    *ngFor="let cell of maze.getCells()"
+    [data]="cell"></app-maze-cell>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group btn-group-justified" role="group">
+      <div class="btn-group" role="group">
+        <button (click)="solveDFS()" class="btn btn-success">Depth-First Traversal</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button (click)="solveBFS()" class="btn btn-info">Breadth-First Traversal</button>
+      </div>
+    </div>
+  </div>
+</div>

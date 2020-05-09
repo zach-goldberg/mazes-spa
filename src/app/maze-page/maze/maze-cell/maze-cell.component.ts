@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MazeCell } from '../../lib/maze-cell.model';
+import { MazeCell } from '../../../lib/maze-cell.model';
 
 @Component({
   selector: 'app-maze-cell',
@@ -7,11 +7,7 @@ import { MazeCell } from '../../lib/maze-cell.model';
   styleUrls: ['./maze-cell.component.css']
 })
 export class MazeCellComponent implements OnInit {
-  @Input('data') cellData: MazeCell = {
-    exploredType: 'unexplored',
-    x: 0,
-    y: 0
-  }
+  @Input('data') cellData: MazeCell;
 
   constructor() { }
 
